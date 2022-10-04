@@ -22,7 +22,7 @@ export default defineUserConfig({
         container: true,
       },
     },
-    hostname: "https://busstop12.github.io/Exsim-docs/",
+    hostname: "https://busstop12.github.io",
 
     navbar: [
       {
