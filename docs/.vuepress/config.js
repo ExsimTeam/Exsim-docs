@@ -31,7 +31,8 @@ module.exports = {
       {
         title: 'Back End',
         children: [
-          '/backend/'
+          '/backend/',
+          '/backend/database'
         ]
       }
     ]
