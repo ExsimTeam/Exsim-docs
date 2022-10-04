@@ -64,6 +64,7 @@ export default defineUserConfig({
       {
         text: "API",
         prefix: "/api/",
+        collapsable: true,
         link: "/api/",
         children: [
           "auth"
@@ -73,6 +74,7 @@ export default defineUserConfig({
         text: "Backend",
         link: "/backend/",
         prefix: "/backend/",
+        collapsable: true,
         children: [
           "database",
           "controller"
