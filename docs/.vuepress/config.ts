@@ -1,6 +1,5 @@
 import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
-import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 
 export default defineUserConfig({
   locales: {
@@ -23,7 +22,7 @@ export default defineUserConfig({
         container: true,
       },
     },
-    hostname: "https://nageseiori.github.io",
+    hostname: "https://busstop12.github.io/Exsim-docs/",
 
     navbar: [
       {
