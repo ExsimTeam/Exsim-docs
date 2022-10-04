@@ -20,9 +20,11 @@ export default defineUserConfig({
         katex: true,
         align: true,
         container: true,
+        tabs: true
       },
     },
     hostname: "https://busstop12.github.io",
+    headerDepth: 1,
 
     navbar: [
       {
@@ -34,12 +36,7 @@ export default defineUserConfig({
         children: [
           {
             text: "API",
-            children: [
-              {
-                text: "Auth",
-                link: "/api/auth/README.md",
-              },
-            ],
+            link: "/api/"
           },
           {
             text: "Frontend",
@@ -67,18 +64,19 @@ export default defineUserConfig({
       {
         text: "API",
         prefix: "/api/",
+        link: "/api/",
         children: [
-          {
-            text: "Authentication",
-            link: "auth",
-          },
-        ],
+          "auth"
+        ]
       },
       {
         text: "Backend",
         link: "/backend/",
         prefix: "/backend/",
-        children: ["database", "controller"],
+        children: [
+          "database",
+          "controller"
+        ],
       },
       {
         text: "Frontend",
