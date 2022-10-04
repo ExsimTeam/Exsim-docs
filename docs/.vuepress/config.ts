@@ -79,7 +79,7 @@ export default defineUserConfig({
         text: "Backend",
         link: "/backend/",
         prefix: "/backend/",
-        children: ["database"],
+        children: ["database", "controller"],
       },
       {
         text: "Frontend",
