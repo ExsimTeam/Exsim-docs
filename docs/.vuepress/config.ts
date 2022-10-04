@@ -6,14 +6,14 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "Vuepress-hope-template",
+      title: "EXSIM",
       description: "Yet another template.",
     },
   },
-  title: "Vuepress-hope-template",
+  title: "EXSIM",
   description: "Yet another template.",
   theme: hopeTheme({
-    logo: '/icon.svg',
+    logo: "/icon.svg",
     plugins: {
       mdEnhance: {
         imageMark: true,
@@ -38,19 +38,19 @@ export default defineUserConfig({
             children: [
               {
                 text: "Auth",
-                link: "/api/auth/README.md"
-              }
-            ]
+                link: "/api/auth/README.md",
+              },
+            ],
           },
           {
             text: "Frontend",
-            link: "/frontend/"
+            link: "/frontend/",
           },
           {
             text: "Backend",
-            link: "/backend/"
+            link: "/backend/",
           },
-        ]
+        ],
       },
       {
         text: "FAQ",
@@ -62,23 +62,24 @@ export default defineUserConfig({
       },
     ],
 
-    repo: "NagaseIori/Vuepress-hope-template",
+    repo: "NagaseIori/EXSIM",
 
     sidebar: [
       {
         text: "API",
         prefix: "/api/",
-        collapsable: true,
         children: [
           {
-            text:"Authentication",
-            link:"auth"
-          }
-        ]
+            text: "Authentication",
+            link: "auth",
+          },
+        ],
       },
       {
         text: "Backend",
         link: "/backend/",
+        prefix: "/backend/",
+        children: ["database"],
       },
       {
         text: "Frontend",
@@ -86,7 +87,7 @@ export default defineUserConfig({
       },
     ],
 
-    docsRepo: "NagaseIori/Vuepress-hope-template-docs",
+    docsRepo: "busstop12/Exsim-docs",
     docsDir: "docs/",
     iconAssets: "iconfont",
   }),
