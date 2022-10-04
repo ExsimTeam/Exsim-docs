@@ -1,4 +1,4 @@
-import{_ as n}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as s,c as e,d as a}from"./app.931e0ef7.js";const i={},l=a(`<h2 id="\u{1F680}-install-build" tabindex="-1"><a class="header-anchor" href="#\u{1F680}-install-build" aria-hidden="true">#</a> \u{1F680} Install &amp; Build</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># install pnpm</span>
+import{_ as n}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as s,c as e,d as a}from"./app.9f80c485.js";const i={},l=a(`<h2 id="\u{1F680}-install-build" tabindex="-1"><a class="header-anchor" href="#\u{1F680}-install-build" aria-hidden="true">#</a> \u{1F680} Install &amp; Build</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># install pnpm</span>
 corepack <span class="token builtin class-name">enable</span>
 corepack prepare pnpm@7.11.0 <span class="token parameter variable">--activate</span>
 
