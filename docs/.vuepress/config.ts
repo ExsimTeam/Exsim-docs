@@ -32,7 +32,7 @@ export default defineUserConfig({
         link: "/",
       },
       {
-        text: "Document",
+        text: "Documentation",
         children: [
           {
             text: "API",
