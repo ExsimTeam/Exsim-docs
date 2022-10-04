@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://busstop12.github.io/Exsim-docs/sitemap.xml
+Sitemap: https://busstop12.github.io/sitemap.xml
