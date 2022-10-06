@@ -49,14 +49,14 @@ function handleReCaptcha(token) {
 POST https://www.recaptcha.net/recaptcha/api/siteverify
 ```
 
-## Request Body
+### Request Body
 | POST Parameter | Description                                                                                       |
 |----------------|---------------------------------------------------------------------------------------------------|
 | secret         | Required. The shared key between your site and reCAPTCHA.                                         |
 | response       | Required. The user response token provided by the reCAPTCHA client-side integration on your site. |
 | remoteip       | Optional. The user's IP address.                                                                  |
 
-## Reponse
+### Reponse
 The response is a JSON object:
 ```json
 {
