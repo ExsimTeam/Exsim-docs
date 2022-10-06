@@ -85,6 +85,14 @@ export default defineUserConfig({
         text: "Frontend",
         link: "/frontend/",
       },
+      {
+        text: "Others",
+        prefix: "/other/",
+        collapsable: true,
+        children: [
+          "recaptcha"
+        ]
+      }
     ],
 
     docsRepo: "busstop12/Exsim-docs",
