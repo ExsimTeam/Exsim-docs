@@ -67,7 +67,8 @@ export default defineUserConfig({
         collapsable: true,
         link: "/api/",
         children: [
-          "auth"
+          "auth",
+          "user"
         ]
       },
       {

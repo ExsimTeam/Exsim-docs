@@ -52,6 +52,7 @@ POST /api/auth/login
 :::
 
 ## /register
+用户注册，用户名只能包括汉字、字母、数字以及下划线；密码8-20位，需要包涵字母、数字、特殊字符(!?_-$&+)。若格式不正确，服务器应给出`500`http状态码，因为经过前端验证后格式仍然错误的请求可以视为 `Bad Request`。
 
 ### Request
 ```
@@ -104,6 +105,8 @@ POST /api/auth/register
 
 ## /sendVerify
 
+向指定邮箱发送一封验证码邮件
+
 ### Request
 ```
 POST /api/auth/sendVerify
@@ -125,6 +128,83 @@ POST /api/auth/sendVerify
 ```json
 {
   "code": 1,
+  "msg": "success"
+}
+```
+
+:::
+
+
+## /resetPassword
+
+修改密码，需要邮箱验证码，密码格式同注册。
+
+### Request
+```
+POST /api/auth/resetPassword
+```
+
+### Request Body
+```json
+{
+  "email": "string",
+  "verify": "string",
+  "newPassword": "string"
+}
+```
+
+### Response
+::: tabs#response
+
+@tab 200
+
+修改密码成功
+```json
+{
+  "code": 1,
+  "msg": "success"
+}
+```
+
+验证码不正确
+```json
+{
+  "code": 100,
+  "msg": "success"
+}
+```
+
+:::
+
+
+## /logout
+
+::: info Require token
+:::
+登出
+
+### Request
+```
+GET /api/auth/logout
+```
+
+### Response
+::: tabs#response
+
+@tab 200
+
+修改密码成功
+```json
+{
+  "code": 1,
+  "msg": "success"
+}
+```
+
+验证码不正确
+```json
+{
+  "code": 100,
   "msg": "success"
 }
 ```
