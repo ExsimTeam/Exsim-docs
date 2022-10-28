@@ -178,6 +178,112 @@ POST /api/file/shareFile
 ```
 
 
+## /openFile
+
+获取文件body信息和建立websocket连接的utoken
+
+### Request
+```
+GET /api/file/openFile
+```
+
+
+### Param
+```json
+{
+    "fileId":1
+}
+```
+
+
+### Response
+::: tabs#response
+
+@tab 200
+
+```json
+{
+    "code": 1,
+    "msg": "success",
+    "data": {
+        "utoken": "d5177f10-a1e7-428f-9220-2bf2b4b3d33d",
+        "fileInfoVo": {
+            "info": 1,//不需要关注（其实是懒得再创一个类）
+            "sheetNum": 1,//工作表数目
+            "sheets": {//工作表ID和名称的键值对
+                "0": "工作表1"
+            },
+            "sheetPtr": 1//不需要关注
+        }
+    }
+}
+```
+```json
+{
+   "code": 100,
+    "msg": "file doesn't exist"
+    
+}
+```
+
+
+@tab 401
+```
+没有授权
+```
+
+
+## /getFileBody
+
+
+
+### Request
+```
+GET /api/file/getFileBody
+```
+
+分页返回，如果没有数据则返回null
+### Param
+```json
+{
+    "fileId":1,
+    "page":1,
+    "sheetId":0
+}
+```
+
+
+### Response
+::: tabs#response
+
+@tab 200
+
+```json
+{
+    "rows":[
+        {
+            "row":1,
+            "sheet":0,
+            "1":{//第一列
+                "value":"",
+                "format":""
+            },
+            "2":{//第二列
+                "value":"",
+                "format":""
+            }
+        }
+    ]
+}
+```
+
+@tab 401
+```
+没有授权
+```
+
+
+
 
 
 
