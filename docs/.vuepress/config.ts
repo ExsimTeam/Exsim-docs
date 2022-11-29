@@ -58,7 +58,7 @@ export default defineUserConfig({
       },
     ],
 
-    repo: "NagaseIori/EXSIM",
+    repo: "ExsimTeam",
 
     sidebar: [
       {
@@ -68,7 +68,9 @@ export default defineUserConfig({
         link: "/api/",
         children: [
           "auth",
-          "user"
+          "user",
+          "file",
+          "websocket"
         ]
       },
       {
