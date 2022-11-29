@@ -46,7 +46,8 @@ save a cell
         "col":1,
         "value":"",
         "format":""
-    }
+    },
+    "sender":"xxx"
 }
 ```
 
@@ -54,7 +55,8 @@ add sheet
 ```json
 {
     "opcode":1,
-    "data":"sheet1"//直接放新的工作表的名称
+    "data":"sheet1",//直接放新的工作表的名称
+    "sender":"xxx"
 }
 ```
 
@@ -62,7 +64,8 @@ delete sheet
 ```json
 {
     "opcode":2,
-    "data":"0"//放要删除的工作表ID，注意需要是数字字符串
+    "data":"0",//放要删除的工作表ID，注意需要是数字字符串
+    "sender":"xxx"
 }
 ```
 
@@ -73,12 +76,24 @@ modify sheet name
     "data":{
         "sheetId":0,
         "sheetName":""
-    }
+    },
+    "sender":"xxx"
 }
 ```
 
+```json
+{
+    "opcode":5,
+    "data":null,
+    "sender":"xxx"
+}
+```
+
+
+
+
 ### response
-成功发送到服务器并转发给其他会话
+成功发送到服务器并转发给其他会话，opcode=-1表示服务器发出的消息，其他是直接转发客户端发来的消息
 ```json
 {
     "code":1,

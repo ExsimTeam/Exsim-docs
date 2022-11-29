@@ -242,7 +242,7 @@ GET /api/file/openFile
 GET /api/file/getFileBody
 ```
 
-分页返回，如果没有数据则返回null
+分页获取文档内容，50行为1页
 ### Param
 ```json
 {
