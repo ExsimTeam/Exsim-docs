@@ -97,7 +97,7 @@ export default defineUserConfig({
       }
     ],
 
-    docsRepo: "busstop12/Exsim-docs",
+    docsRepo: "ExsimTeam/Exsim-docs",
     docsDir: "docs/",
     iconAssets: "iconfont",
   }),

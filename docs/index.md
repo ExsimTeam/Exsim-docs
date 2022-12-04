@@ -5,18 +5,18 @@ heroText: EXSIM
 tagline: "Excel simulator."
 actions:
   - text: Getting Started
-    link: /guide/getting-started.html
+    link: /about
     type: primary
-  - text: Latest Release
-    link: /
-    type: secondary
+#   - text: Latest Release
+#     link: /
+#     type: secondary
 heroImage: /icon.svg
-features:
-  - title: This is a feature.
-    icon: emoji
-    details: This is not a bug but a feature.
+# features:
+#   - title: This is a feature.
+#     icon: emoji
+#     details: This is not a bug but a feature.
 
-footer: Fucked up Licensed | Copyright © 2022
+# footer: Fucked up Licensed | Copyright © 2022
 ---
 
 
