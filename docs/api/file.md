@@ -57,7 +57,7 @@ GET /api/file/getFileList/{page}
 }
 ```
 
-
+:::
 
 ## /newFile
 
@@ -94,6 +94,8 @@ POST /api/file/newFile
 }
 ```
 
+:::
+
 ## /deleteFile
 
 删除文件
@@ -122,6 +124,8 @@ POST /api/file/deleteFile
     "msg": "success"
 }
 ```
+
+:::
 
 ## /shareFile
 
@@ -177,6 +181,7 @@ POST /api/file/shareFile
 没有授权
 ```
 
+:::
 
 ## /openFile
 
@@ -232,17 +237,16 @@ GET /api/file/openFile
 没有授权
 ```
 
+:::
 
 ## /getFileBody
 
-
-
+分页获取文档内容，50行为1页
 ### Request
 ```
 GET /api/file/getFileBody
 ```
 
-分页获取文档内容，50行为1页
 ### Param
 ```json
 {
@@ -282,7 +286,7 @@ GET /api/file/getFileBody
 没有授权
 ```
 
-
+:::
 
 
 
